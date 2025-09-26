@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Template Bootstrap - Neutro</title>
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="/style.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent: #7b2ff5;
+      --accent: #ff7eb6;
+      --glass: black;
+      --card-glow: 0 8px 30px rgba(123,47,247,0,18);
+
+    }
+    html, body{height:100%;}
+    body{
+      background: radial-gradient(1200px 600px at 10% 10%, rgba (123, 47,0, 12),transparent 6%),
+      radial-gradient(900px 400px at 90% 90%, rgba (255,126, 182,0,08),transparent 8%), #030313;
+      color: white;
+      -webkit-font-smoothing: antialised; font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+    .container-lg{max-width: 1200px;}
+    /*Barra de Navegação*/
+    .nav-brand{font-weight: 700;letter-spacing: 0.6px;}
+    .navbar-custom{backdrop-filter: blur (6px);background: linear-gradient
+    (180deg, rgba(118, 134, 226, 0.414), rgb(25, 14, 219))}
+
+    .hero{
+      padding: 5.5rem 0;
+      position: relative;
+    }
+    .hero-card{
+      background:black
+    }
+  </style>
+
+</head>
+<body>
+
+
+  <!-- NAVBAR (estrutura neutra) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Marca</a> <!-- Alunos podem alterar o texto ou inserir logo -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sec-destaques">Destaques</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sec-colecoes">Coleções</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sec-contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / BANNER (conteúdo básico) -->
+  <header class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5">Título principal do site</h1>
+          <p class="lead">Descrição introdutória. Substitua este texto pelo conteúdo desejado.</p>
+          <div class="d-flex gap-2">
+            <a class="btn btn-primary" href="#sec-destaques">Explorar</a>
+            <a class="btn btn-outline-secondary" href="#sec-contato">Contato</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <!-- Imagem de exemplo (placeholder). Alunos podem substituir por imagem local. -->
+          <img src="https://via.placeholder.com/600x400.png?text=Imagem+Placeholder" alt="Imagem" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SEÇÃO DESTAQUES: grid de cards neutros -->
+    <section id="sec-destaques" class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2>Destaques</h2>
+          <!-- Local para controles (se desejado) -->
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/600x350.png?text=Cartao+1" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Título do Cartão 1</h5>
+                <p class="card-text">Texto descritivo do cartão 1.</p>
+                <a href="#" class="btn btn-sm btn-primary">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/600x350.png?text=Cartao+2" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Título do Cartão 2</h5>
+                <p class="card-text">Texto descritivo do cartão 2.</p>
+                <a href="#" class="btn btn-sm btn-primary">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/600x350.png?text=Cartao+3" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Título do Cartão 3</h5>
+                <p class="card-text">Texto descritivo do cartão 3.</p>
+                <a href="#" class="btn btn-sm btn-primary">Ver mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO COLEÇÕES: lista simples -->
+    <section id="sec-colecoes" class="py-5 bg-light">
+      <div class="container">
+        <h2>Coleções</h2>
+        <div class="row g-3 mt-3">
+          <div class="col-sm-6 col-lg-4">
+            <div class="p-3 border rounded">
+              <h5>Coleção A</h5>
+              <p class="mb-0 small text-muted">Descrição curta da coleção A.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="p-3 border rounded">
+              <h5>Coleção B</h5>
+              <p class="mb-0 small text-muted">Descrição curta da coleção B.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="p-3 border rounded">
+              <h5>Coleção C</h5>
+              <p class="mb-0 small text-muted">Descrição curta da coleção C.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO GALERIA (grid de imagens neutro) -->
+    <section class="py-5">
+      <div class="container">
+        <h2>Galeria</h2>
+        <div class="row g-2 mt-3">
+          <div class="col-6 col-md-4 col-lg-3">
+            <img src="https://via.placeholder.com/400x300.png?text=1" class="img-fluid rounded" alt="1">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img src="https://via.placeholder.com/400x300.png?text=2" class="img-fluid rounded" alt="2">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img src="https://via.placeholder.com/400x300.png?text=3" class="img-fluid rounded" alt="3">
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img src="https://via.placeholder.com/400x300.png?text=4" class="img-fluid rounded" alt="4">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO / FORMULÁRIO (estrutura básica) -->
+    <section id="sec-contato" class="py-5 bg-light">
+      <div class="container">
+        <h2>Contato</h2>
+        <div class="row mt-3">
+          <div class="col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label for="inputNome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Deixe aqui um exemplo a ser exibido">
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Deixe aqui um exemplo a ser exibido">
+              </div>
+              <div class="mb-3">
+                <label for="inputMensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="inputMensagem" rows="4" placeholder="Deixe aqui um exemplo a ser exibido"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <p>Informações de contato ou instruções adicionais. Substitua conforme necessário.</p>
+            <ul class="list-unstyled">
+              <li>Email: contato@exemplo.com</li>
+              <li>Telefone: (00) 0 0000-0000</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER simples -->
+  <footer class="py-4 bg-white">
+    <div class="container text-center">
+      <small class="text-muted">© <span id="ano">2025</span> — Template neutro para exercício.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (bundle inclui Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Pequeno script neutro -->
+  <script>
+    // Ajusta o ano no rodapé automaticamente
+    document.getElementById('ano').textContent = new Date().getFullYear();
+    // Observação: não há scripts customizados de estilo ou comportamento nesta base.
+  </script>
+</body>
+</html>
